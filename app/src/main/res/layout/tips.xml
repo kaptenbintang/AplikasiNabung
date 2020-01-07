@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".tips_activity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appBarLayout"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            app:contentScrim="@color/colorPrimary"
+            app:title="Tips and trick ">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/pig_blue"
+                android:scaleType="centerCrop"/>
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"/>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/hometips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:src="@drawable/ic_home_white_24dp"
+        android:tint="@android:color/white"
+        app:layout_anchor="@id/appBarLayout"
+        app:layout_anchorGravity="bottom|right|end" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="250dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3 Tips and Tricks savings"
+            android:gravity="center_horizontal"
+            android:textSize="25sp"
+            android:textColor="@android:color/holo_blue_light"
+            android:lineSpacingExtra="8sp"
+            android:padding="16dp" ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:textColor="@android:color/black"
+        android:justificationMode="inter_word"
+        android:text="      Improving your finances improves your happiness, in general, so I thought it would be important to share stuff that’s worked for me."
+        android:padding="8dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textColor="@android:color/black"
+            android:justificationMode="inter_word"
+            android:text="     there are 10 tips from us to you to saving money : "
+            android:padding="10dp"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:justificationMode="inter_word"
+            android:text="1. use cash"
+            android:padding="10dp"></TextView>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:layout_gravity="center"
+        android:background="@drawable/duit">
+    </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textColor="@android:color/black"
+            android:gravity="left|end"
+            android:text="     Instead of charging things to credit cards or debit cards,   use  cash for    non-bill   spending  such as eating    out, gas, groceries. Spending cash makes the spending more real, and there’s an added advantage of knowing when you’re out of cash, instead of spending more than you"
+            android:padding="10dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:justificationMode="inter_word"
+            android:text="2. Use saving application"
+            android:padding="10dp"></TextView>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+
+        android:layout_gravity="center"
+        android:background="@drawable/duit"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textColor="@android:color/black"
+            android:gravity="left|end"
+            android:text="     The next tip for saving money is, you can use smartphone technology, using a savings application. If you have been having difficulty or don't care about you, then you can take advantage of the application."
+            android:padding="10dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:justificationMode="inter_word"
+            android:text="3. Cook at home  "
+            android:padding="10dp"></TextView>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:layout_gravity="center"
+        android:background="@drawable/cook">
+    </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textColor="@android:color/black"
+            android:gravity="left|end"
+            android:text="     Going out makes you more likely to spend unnecessarily. You eat at restaurants, go to the mall, stop at the gas station for snacks. It’s hard to avoid spending when you’re on the road. Instead, stay home, and find free entertainment. It’s also a great way to bond with your family."
+            android:padding="10dp"></TextView>
+</LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
